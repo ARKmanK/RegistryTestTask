@@ -35,7 +35,7 @@ export const loginUser = async (username: string, password: string): Promise<ILo
 export const verifyOTP = async (otp: string): Promise<IVerifyOTPResponse> => {
 	await new Promise(resolve => setTimeout(resolve, 1000))
 	if (otp === '131311') {
-		return { success: true, token: 'mock_token_123456' }
+		return { success: true, token: 'mock_token_131311' }
 	} else if (otp === '111111') {
 		throw new Error('Время действия кода истекло.')
 	} else if (otp === '222222') {
